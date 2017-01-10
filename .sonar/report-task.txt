@@ -1,0 +1,5 @@
+projectKey=art.generator
+serverUrl=http://vps331341.ovh.net:9000/sonar
+dashboardUrl=http://vps331341.ovh.net:9000/sonar/dashboard/index/art.generator
+ceTaskId=AVmGUgZRWVGdycXcPCkG
+ceTaskUrl=http://vps331341.ovh.net:9000/sonar/api/ce/task?id=AVmGUgZRWVGdycXcPCkG
