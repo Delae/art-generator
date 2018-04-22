@@ -4,8 +4,8 @@ import javax.swing.*;
 
 public class Window extends JFrame {
 
-	public int windowWidth = 1000;
-	public int windowHeight = 850;
+	public int windowWidth = 500;
+	public int windowHeight = 400;
 	
 	public Window(){
 		this.setTitle("Art generator - by Z. Thivet");

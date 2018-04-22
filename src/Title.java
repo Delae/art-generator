@@ -1,11 +1,8 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -109,7 +106,7 @@ public class Title {
 	}
 
 	private String generateTitle() {
-		String title = getTitleElementFromFile("noun.txt");
+		String title = getTitleElementFromFile("title_parts/noun.txt");
 		String[] titleElements = getTitleElementsTypes(getTitleElementsNumber());
 		if (titleElements.length > 0) {
 			for (int i = 0; i < titleElements.length; i++) {
@@ -118,11 +115,11 @@ public class Title {
 					separator = "\n";
 				}
 				if (titleElements[i].equals(TitleElementType.GENITIVE.toString())) {
-					title = title + separator + getTitleElementFromFile("genitive.txt");
+					title = title + separator + getTitleElementFromFile("title_parts/genitive.txt");
 				} else if (titleElements[i].equals(TitleElementType.VERB.toString())) {
-					title = title + separator + getTitleElementFromFile("verb.txt");
+					title = title + separator + getTitleElementFromFile("title_parts/verb.txt");
 				} else if (titleElements[i].equals(TitleElementType.CONTEXT.toString())) {
-					title = title + separator + getTitleElementFromFile("context.txt");
+					title = title + separator + getTitleElementFromFile("title_parts/context.txt");
 				}
 			}
 		}

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ArtGenerator:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/ArtGenerator_jar</output-path>
+    <root id="archive" name="ArtGenerator.jar">
+      <element id="module-output" name="ArtGenerator" />
+    </root>
+  </artifact>
+</component>

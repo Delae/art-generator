@@ -29,9 +29,7 @@ public class Art {
 	}
 
 	protected int backGroundStyleIndex = getMaxRandom(BackGroundEnum.values().length);
-	//protected BackGroundEnum backGroundStyle = BackGroundEnum.values()[backGroundStyleIndex];
-
-	protected BackGroundEnum backGroundStyle = BackGroundEnum.GRID;
+	protected BackGroundEnum backGroundStyle = BackGroundEnum.values()[backGroundStyleIndex];
 
 	public Art() {
 	}
